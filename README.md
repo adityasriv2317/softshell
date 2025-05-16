@@ -27,7 +27,7 @@ SoftShell is a modern web application for buying and selling software licenses. 
 - **Icons**: Lucide React
 - **State Management**: React Context API
 - **API Integration**: Axios
-- **AI Integration**: Google AI API
+- **AI Integration**: Chatbot API
 
 ## Getting Started
 
