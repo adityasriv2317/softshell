@@ -34,7 +34,7 @@ SoftShell is a modern web application for buying and selling software licenses. 
 ### Prerequisites
 - Node.js (v14 or higher)
 - npm or yarn
-- Google AI API key
+- Chatbot API key
 
 ### Installation
 

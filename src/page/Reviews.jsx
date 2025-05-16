@@ -9,7 +9,7 @@ const Reviews = () => {
     {
       name: "John Smith",
       role: "Software Developer",
-      organization: "TechCorp Solutions",
+      organization: "Credex Technologies",
       comment:
         "The process was incredibly smooth and professional. I received payment within 24 hours of listing my license.",
       avatar: "https://i.pravatar.cc/150?img=1",
