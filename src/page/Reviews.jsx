@@ -52,7 +52,7 @@ const Reviews = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Customers <span className="text-blue-500 dark:text-blue-400">
+            Experts<span className="text-blue-500 dark:text-blue-400">
               {" "}
               Believe in Us
             </span>
