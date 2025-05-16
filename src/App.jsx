@@ -1,6 +1,7 @@
 import { ThemeProvider } from "./context/ThemeContext";
 import Header from "./components/Header";
 import Hero from "./page/Hero";
+import ProcessSteps from "./page/Steps";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
 import ScrollToTopButton from "./components/ScrollToTopButton";
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <main className="container mx-auto py-20">
           <Hero />
+          <ProcessSteps />
           <Chatbot />
           <ScrollToTopButton />
         </main>
