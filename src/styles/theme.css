@@ -1,0 +1,200 @@
+:root {
+  /* Light mode variables */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f3f4f6;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
+  --color-border: #e5e7eb;
+  --color-accent: #0284c7;
+  --color-accent-hover: #0369a1;
+}
+
+.dark {
+  /* Dark mode variables */
+  --color-bg-primary: #1e293b;
+  --color-bg-secondary: #0f172a;
+  --color-text-primary: #f3f4f6;
+  --color-text-secondary: #9ca3af;
+  --color-border: #374151;
+  --color-accent: #38bdf8;
+  --color-accent-hover: #7dd3fc;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Utility classes */
+.bg-theme-primary {
+  background-color: var(--color-bg-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.text-theme-primary {
+  color: var(--color-text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--color-text-secondary);
+}
+
+.border-theme {
+  border-color: var(--color-border);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.hover\:text-accent:hover {
+  color: var(--color-accent-hover);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.hover\:bg-accent:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Light Theme Classes */
+.theme-light {
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --bg-accent: #e5e7eb;
+
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-tertiary: #6b7280;
+  --text-accent: #3b82f6;
+
+  /* Border Colors */
+  --border-primary: #e5e7eb;
+  --border-secondary: #d1d5db;
+  --border-accent: #3b82f6;
+
+  /* Shadow Colors */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(to bottom, #ffffff, #f9fafb);
+  --gradient-secondary: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+  --gradient-accent: linear-gradient(to right, #3b82f6, #60a5fa);
+
+  /* Component Specific Colors */
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --button-primary: #3b82f6;
+  --button-primary-hover: #2563eb;
+  --button-secondary: #ffffff;
+  --button-secondary-hover: #f3f4f6;
+}
+
+/* Utility Classes */
+.bg-theme-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-theme-tertiary {
+  background-color: var(--bg-tertiary);
+}
+
+.text-theme-primary {
+  color: var(--text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.text-theme-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-theme-accent {
+  color: var(--text-accent);
+}
+
+.border-theme-primary {
+  border-color: var(--border-primary);
+}
+
+.border-theme-secondary {
+  border-color: var(--border-secondary);
+}
+
+.border-theme-accent {
+  border-color: var(--border-accent);
+}
+
+.shadow-theme-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-theme-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-theme-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.gradient-theme-primary {
+  background: var(--gradient-primary);
+}
+
+.gradient-theme-secondary {
+  background: var(--gradient-secondary);
+}
+
+.gradient-theme-accent {
+  background: var(--gradient-accent);
+}
+
+/* Component Classes */
+.card-theme {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-md);
+}
+
+.input-theme {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+}
+
+.button-theme-primary {
+  background-color: var(--button-primary);
+  color: white;
+}
+
+.button-theme-primary:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.button-theme-secondary {
+  background-color: var(--button-secondary);
+  border: 1px solid var(--border-primary);
+}
+
+.button-theme-secondary:hover {
+  background-color: var(--button-secondary-hover);
+} 
