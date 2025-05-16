@@ -67,7 +67,7 @@ const Reviews = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`${getThemeClass(
                 "card"
-              )} rounded-xl p-6 shadow-lg relative`}
+              )} rounded-xl p-6 border shadow-lg relative`}
             >
               <div className={`${getThemeClass("text", "accent")} mb-4`}>
                 <Quote size={40} />

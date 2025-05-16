@@ -97,7 +97,7 @@ const WhyUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`${getThemeClass('card')} rounded-xl p-6 shadow-lg`}
+              className={`${getThemeClass('card')} border rounded-xl p-6 shadow-lg`}
             >
               <div className={`${getThemeClass('text', 'accent')} mb-4`}>
                 <feature.icon size={40} />
