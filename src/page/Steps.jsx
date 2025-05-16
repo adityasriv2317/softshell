@@ -70,10 +70,7 @@ const Steps = () => {
   };
 
   return (
-    <section
-      ref={containerRef}
-      className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 overflow-hidden"
-    >
+    <section id="steps" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 overflow-hidden">
       <motion.div style={{ opacity, scale }} className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
