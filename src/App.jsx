@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./page/Hero";
 import Steps from "./page/Steps";
 import WhyUs from "./page/WhyUs";
+import Reviews from "./page/Reviews";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
 import ScrollToTopButton from "./components/ScrollToTopButton";
@@ -16,9 +17,10 @@ function App() {
           <Hero />
           <Steps />
           <WhyUs />
-          <Chatbot />
-          <ScrollToTopButton />
+          <Reviews />
         </main>
+        <Chatbot />
+        <ScrollToTopButton />
         <Footer />
       </div>
     </ThemeProvider>

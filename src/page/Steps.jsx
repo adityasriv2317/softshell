@@ -83,7 +83,8 @@ const Steps = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            How It Works
+            How{" "}
+            <span className="text-blue-500 dark:text-blue-400"> It Works</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Sell your software licenses in three simple steps. Fast, secure, and
