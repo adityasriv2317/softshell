@@ -1,11 +1,22 @@
-import React from 'react'
+import { ThemeProvider } from './context/ThemeContext';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
-const App = () => {
+function App() {
   return (
-    <div className='bg-red-500'>
-      hi
-    </div>
-  )
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+        <Header />
+        <main className="container mx-auto px-4 pt-20">
+          <Hero />
+          <Chatbot />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
