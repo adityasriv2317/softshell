@@ -118,11 +118,10 @@ const Chatbot = () => {
   };
 
   // Calculate button position based on scroll
-  const buttonPosition =
-    scrollPosition > 300 ? "right-16 sm:right-20" : "right-4 sm:right-6";
+  const buttonPosition = scrollPosition > 300 ? "right-16 sm:right-20" : "right-4 sm:right-6";
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className={`fixed bottom-4 ${buttonPosition} z-50 transition-all duration-300`}>
       <AnimatePresence>
         {chatOpen && (
           <motion.div
