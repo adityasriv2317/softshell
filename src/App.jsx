@@ -1,6 +1,6 @@
 import { ThemeProvider } from "./context/ThemeContext";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Hero from "./page/Hero";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
 import ScrollToTopButton from "./components/ScrollToTopButton";

@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full bg-white dark:bg-gray-900 shadow-md z-50 transition-colors duration-200">
+    <header className="fixed w-full bg-white/90 backdrop-blur-xs dark:bg-gray-900/95 shadow-md z-50 transition-colors duration-200">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <motion.div

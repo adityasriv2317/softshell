@@ -130,7 +130,7 @@ const Chatbot = () => {
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
           >
-            <div className="bg-white/10 w-full max-w-[95%] sm:max-w-[85%] md:max-w-lg h-[90vh] sm:h-[85vh] md:h-[80vh] rounded-xl shadow-2xl flex flex-col overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 w-full max-w-[95%] sm:max-w-[85%] md:max-w-lg h-[90vh] sm:h-[85vh] md:h-[80vh] rounded-xl shadow-2xl flex flex-col overflow-hidden">
               {/* Chat Header */}
               <div className="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
                 <div className="flex items-center space-x-2">
