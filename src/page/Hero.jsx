@@ -5,7 +5,7 @@ import hero from "../assets/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] rounded-b-xl flex items-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 dark:opacity-20">
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-[radial-gradient(#374151_1px,transparent_1px)]"></div>
