@@ -1,39 +1,48 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Upload, DollarSign, Wallet, ArrowRight } from 'lucide-react';
-import { useRef } from 'react';
-import { ChartLine } from '../components/ChartLine';
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Upload, DollarSign, Wallet, ArrowRight } from "lucide-react";
+import { useRef } from "react";
+import { ChartLine } from "../components/ChartLine";
 
 const Steps = () => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end start"],
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.8, 1, 1, 0.8]);
+  const scale = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.8, 1],
+    [0.8, 1, 1, 0.8]
+  );
 
   const steps = [
     {
       icon: Upload,
-      title: 'Upload License',
-      description: 'Simply upload your software license details and documentation.',
-      color: 'blue',
-      features: ['Drag & drop support', 'Multiple file formats', 'Secure upload']
+      title: "Upload License",
+      description:
+        "Simply upload your software license details and documentation.",
+      color: "blue",
+      features: [
+        "Drag & drop support",
+        "Multiple file formats",
+        "Secure upload",
+      ],
     },
     {
       icon: DollarSign,
-      title: 'Get Valuation',
-      description: 'Receive a fair market valuation within 24 hours.',
-      color: 'green',
-      features: ['Market analysis', 'Price comparison', 'Expert review']
+      title: "Get Valuation",
+      description: "Receive a fair market valuation within 24 hours.",
+      color: "green",
+      features: ["Market analysis", "Price comparison", "Expert review"],
     },
     {
       icon: Wallet,
-      title: 'Get Paid',
-      description: 'Accept our offer and receive payment within 48 hours.',
-      color: 'purple',
-      features: ['Secure payment', 'Multiple methods', 'Instant confirmation']
+      title: "Get Paid",
+      description: "Accept our offer and receive payment within 48 hours.",
+      color: "purple",
+      features: ["Secure payment", "Multiple methods", "Instant confirmation"],
     },
   ];
 
@@ -43,9 +52,9 @@ const Steps = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.3,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -55,17 +64,17 @@ const Steps = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.6, -0.05, 0.01, 0.99]
-      }
-    }
+        ease: [0.6, -0.05, 0.01, 0.99],
+      },
+    },
   };
 
   return (
-    <section ref={containerRef} className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 overflow-hidden">
-      <motion.div 
-        style={{ opacity, scale }}
-        className="container mx-auto px-4"
-      >
+    <section
+      ref={containerRef}
+      className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 overflow-hidden"
+    >
+      <motion.div style={{ opacity, scale }} className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +86,8 @@ const Steps = () => {
             How It Works
           </h2>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Sell your software licenses in three simple steps. Fast, secure, and hassle-free.
+            Sell your software licenses in three simple steps. Fast, secure, and
+            hassle-free.
           </p>
         </motion.div>
 
@@ -95,7 +105,7 @@ const Steps = () => {
               className="relative group"
             >
               {/* Step Number */}
-              <motion.div 
+              <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
@@ -107,8 +117,12 @@ const Steps = () => {
 
               {/* Step Card */}
               <div className="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-[400px] flex flex-col">
-                <div className={`w-20 h-20 rounded-2xl bg-${step.color}-100 dark:bg-${step.color}-900/20 flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300 mx-auto`}>
-                  <step.icon className={`w-10 h-10 text-${step.color}-600 dark:text-${step.color}-400`} />
+                <div
+                  className={`w-20 h-20 rounded-2xl bg-${step.color}-100 dark:bg-${step.color}-900/20 flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300 mx-auto`}
+                >
+                  <step.icon
+                    className={`w-10 h-10 text-${step.color}-600 dark:text-${step.color}-400`}
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
                   {step.title}
@@ -116,7 +130,7 @@ const Steps = () => {
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-center">
                   {step.description}
                 </p>
-                
+
                 {/* Features List */}
                 <ul className="space-y-3 flex-grow">
                   {step.features.map((feature, featureIndex) => (
@@ -154,7 +168,7 @@ const Steps = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 flex items-center gap-2 mx-auto cursor-pointer bg-blue-800/50 text-white rounded-xl hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="px-8 py-4 flex items-center gap-2 mx-auto cursor-pointer bg-blue-800/60 text-white rounded-xl hover:bg-blue-800/80 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Start Now
             <ChartLine />
@@ -165,4 +179,4 @@ const Steps = () => {
   );
 };
 
-export default Steps; 
+export default Steps;
